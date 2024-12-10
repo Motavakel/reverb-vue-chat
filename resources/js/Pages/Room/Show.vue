@@ -3,6 +3,7 @@ import Footer from '@/Components/Chat/Footer.vue';
 import Header from '@/Components/Chat/Header.vue';
 import Main from '@/Components/Chat/Main.vue';
 import Nav from '@/Components/Chat/Nav.vue';
+import { useMessageStore } from '../Store/UseMessageStore';
 
 defineProps({
     room:{
@@ -10,6 +11,8 @@ defineProps({
         Required :true
     }
 });
+
+const messageStore = useMessageStore();
 
 </script>
 <template>
@@ -25,7 +28,7 @@ defineProps({
 
                 <Header />
 
-                <Main />
+                <Main v-on:valid="console.log($event)" />
 
                 <Footer />
 
