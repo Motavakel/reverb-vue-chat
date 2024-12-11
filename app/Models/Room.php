@@ -9,4 +9,8 @@ class Room extends Model
 {
     use HasFactory;
     protected $fillable = ['slug','title'];
+
+    public function messages(){
+        return $this->hasMany(Message::class);
+    }
 }
