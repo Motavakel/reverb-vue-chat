@@ -11,6 +11,7 @@ class Room extends Model
     protected $fillable = ['slug','title'];
 
     public function messages(){
+       
         return $this->hasMany(Message::class);
     }
 }

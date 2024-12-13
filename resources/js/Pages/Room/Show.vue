@@ -5,7 +5,7 @@ import Main from '@/Components/Chat/Main.vue';
 import Nav from '@/Components/Chat/Nav.vue';
 import { useMessageStore } from '../Store/UseMessageStore';
 
-defineProps({
+const props = defineProps({
     room:{
         type:Object,
         Required :true
@@ -13,6 +13,7 @@ defineProps({
 });
 
 const messageStore = useMessageStore();
+messageStore.fetchMessage(props.room.slug);
 
 </script>
 <template>
@@ -28,6 +29,7 @@ const messageStore = useMessageStore();
 
                 <Header />
 
+                {{ messageStore.allMessage }}
                 <Main v-on:valid="console.log($event)" />
 
                 <Footer />

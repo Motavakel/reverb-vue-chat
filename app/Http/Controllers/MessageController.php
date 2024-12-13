@@ -9,9 +9,7 @@ use Illuminate\Http\Request;
 class MessageController extends Controller
 {
     public function index(Room $room){
-
-        $messages = $room->messages()->with('user')->latest()->get();
-
+        $messages = $room->messages()->with('user')->latest()->paginate(50);
         return MessageResource::collection($messages);
     }
 }
