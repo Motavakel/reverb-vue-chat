@@ -1,7 +1,9 @@
 <script setup>
-import { useMessageStore } from '@/Store/useMessageStore';
+import { useMessageStore } from '@/Pages/Store/UseMessageStore';
 import { useIntersectionObserver } from '@vueuse/core';
 import { ref } from 'vue';
+
+
 
 const props = defineProps({
     room:{
@@ -10,6 +12,8 @@ const props = defineProps({
     }
 });
 const messageStore = useMessageStore();
+
+
 const target = ref('');
 const {stop} = useIntersectionObserver(target,
 ([{isIntersecting}],observerElement)=>{
@@ -18,13 +22,14 @@ const {stop} = useIntersectionObserver(target,
     }
 });
 
+
 </script>
 
 <template>
     <main id="page-content" class="absolute inset-0">
         <div
             class="container mx-auto space-y-6 space-y-reverse px-4 py-24 lg:p-8 lg:pb-28 xl:max-w-7xl flex flex-col-reverse h-full overflow-y-auto">
-            <div v-for="message in messageStore.allMessages" :key="message.id"
+            <div v-for="message in messageStore.allMessage" :key="message.id"
                 class="flex w-5/6 flex-col gap-2 lg:w-2/3 xl:w-1/3 "
                 :class="{
                     'items-start'

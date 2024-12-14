@@ -12,8 +12,14 @@ const props = defineProps({
     }
 });
 
+const storeMessage = (payload)=>{
+    allMessages.storeMessage(props.room.slug,payload)
+}
+
+
 const messageStore = useMessageStore();
 messageStore.fetchMessage(props.room.slug);
+
 
 </script>
 <template>
@@ -29,10 +35,10 @@ messageStore.fetchMessage(props.room.slug);
 
                 <Header />
 
-                {{ messageStore.allMessage }}
-                <Main v-on:valid="console.log($event)" />
 
-                <Footer />
+                <Main :room="room" />
+
+                <Footer v-on:valid="storeMessage({content : $event})" />
 
             </div>
 
