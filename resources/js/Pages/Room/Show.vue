@@ -13,9 +13,13 @@ const props = defineProps({
 });
 
 const storeMessage = (payload)=>{
-    allMessages.storeMessage(props.room.slug,payload)
+    messageStore.storeMessage(props.room.slug,payload)
 }
 
+const channel = Echo.join(`room.${props.room.slug}`);
+channel.listen("MessageCreated",e=>{
+    console.log(e);
+})
 
 const messageStore = useMessageStore();
 messageStore.fetchMessage(props.room.slug);

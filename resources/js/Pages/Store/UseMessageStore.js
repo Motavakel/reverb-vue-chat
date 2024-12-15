@@ -23,6 +23,17 @@ export const useMessageStore = defineStore('message', {
 
     async fetchPreviousMessage(roomSlug) {
       await this.fetchMessage(roomSlug, this.page + 1);
+    },
+
+    async storeMessage(roomSlug,payloud){
+        await axios.post(`/rooms/${roomSlug}/messages`,payloud,{
+            headers:{
+               "X-Socket-Id":Echo.socketId()
+            }
+        })
+        .then((response)=>{
+            this.message = [response.data,...this.message];
+        });
     }
   },
 
