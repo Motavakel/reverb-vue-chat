@@ -1,0 +1,38 @@
+import { defineStore } from "pinia";
+
+export const useUsersStore = defineStore("users", {
+    state: () => {
+        return {
+            users: [],
+        };
+    },
+
+    actions: {
+        async setUsers(users) {
+            this.users = users;
+        },
+        async addUser(user) {
+            if(typeof this.users.filter((u) => u.id === user.id) !== "undefined"){
+                return;
+            }
+            this.users.push(user);
+        },
+        async removeUser(user) {
+            if (this.users.some((u) => u.id === user.id)) {
+                this.users = this.users.filter((u) => u.id !== user.id);
+            }
+        },
+        async setTyping(e) {
+            this.users.find((user) => user.id == e.id).typing = e.typing;
+        },
+    },
+
+    getters: {
+        allUsers(state) {
+            return state.users;
+        },
+        count(state) {
+            return state.users.length;
+        },
+    },
+});

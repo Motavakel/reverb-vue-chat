@@ -32,8 +32,12 @@ export const useMessageStore = defineStore('message', {
             }
         })
         .then((response)=>{
-            this.message = [response.data,...this.message];
+            pushMessage(response.data);
         });
+    },
+    pushMessage(message){
+        this.message.pop();
+        this.message = [message,...this.message];
     }
   },
 
