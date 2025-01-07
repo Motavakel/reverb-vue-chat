@@ -1,66 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+![Laravel Version](https://img.shields.io/badge/Laravel-11-blue)
+![Laravel Reverb](https://img.shields.io/badge/Reverb-1.4.0-green)
+[![GitHub license](https://img.shields.io/badge/license-GPL%202-gold.svg)](https://opensource.org/licenses/GPL-2.0)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## برنامه چت آنلاین با لاراول، Vue.js و Reverb
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<p align="justify">
+این پروژه یک برنامه چت آنلاین است که با استفاده از تکنولوژی‌های مدرن و قدرتمند توسعه داده شده تا تجربه‌ای بی‌درنگ و روان از چت را برای کاربران فراهم کند.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### تکنولوژی‌های استفاده شده
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+لاراول 
+<p align="justify">
+    فریم‌ورک قدرتمند PHP برای توسعه‌ی برنامه‌های وب با ساختار MVC. لاراول با ارائه امکاناتی مانند مسیریابی، ORM قدرتمند Eloquent، سیستم احراز هویت داخلی، و ابزارهای تست، توسعه‌ی سریع و امن برنامه‌های وب را تسهیل می‌کند. در این پروژه، لاراول مسئول مدیریت منطق بک‌اند، مدیریت کاربران، ذخیره‌سازی پیام‌ها در پایگاه داده، و همچنین فراهم کردن زیرساخت برای ارتباطات WebSocket است.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+اینرشیا<br/>
+<p align="justify">
+ پلی بین بک‌اند لاراول و فرانت‌اند Vue.js که به توسعه‌دهندگان اجازه می‌دهد از قدرت هر دو فریم‌ورک به صورت یکپارچه بهره ببرند. Inertia.js با حذف نیاز به APIهای جداگانه، انتقال داده‌ها و مدیریت رندرینگ صفحات را به صورت ساده و کارآمد انجام می‌دهد.
 
-### Premium Partners
+ویو جی اس <br/>
+<p align="justify">
+فریم‌ورک جاوااسکریپت برای ساخت رابط‌های کاربری پویا و تعاملی. در این پروژه، Vue.js مسئول نمایش پیام‌ها، مدیریت ورودی کاربر، و ایجاد تجربه‌ی کاربری جذاب است.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+پینیا<br/> 
+<p align="justify">
+کتابخانه‌ی مدیریت وضعیت (State Management) برای Vue.js که به سادگی و کارآمدی مدیریت داده‌ها در سطح برنامه را فراهم می‌کند. Pinia همانند ریداکس در ری اکت به ما کمک می‌کند تا وضعیت کاربران، چت‌ها، و پیام‌ها را به صورت متمرکز مدیریت کنیم.
 
-## Contributing
+وب سوکت ری ورب<br/>
+<p align="justify">
+ری ورب یک کتابخانه‌ی کارآمد برای ارتباط برخط (Real-time) بین سرور و کلاینت است. با استفاده از این کتابخانه، پیام‌های چت به‌صورت زنده و بدون نیاز به رفرش شدن صفحه برای کاربران ارسال و دریافت می‌شوند. این ویژگی تجربه‌ی کاربری مشابه با اپلیکیشن‌های مدرن پیام‌رسان را فراهم می‌کند.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ویژگی‌های کلیدی
 
-## Code of Conduct
+*   **احراز هویت:** سیستم ورود و ثبت‌نام کاربران با استفاده از امکانات قدرتمند احراز هویت لاراول.
+*   **چت بی‌درنگ:** ارسال و دریافت پیام‌ها به صورت زنده و بدون نیاز به رفرش صفحه.
+*   **تاریخچه‌ی پیام‌ها:** ذخیره‌سازی پیام‌ها در پایگاه داده برای دسترسی به تاریخچه‌ی گفتگوها.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## در حال توسعه
+برای ایجاد رابط کاربری ریسپانسیو براساس فریمورک تیلویند
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
